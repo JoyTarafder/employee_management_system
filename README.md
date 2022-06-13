@@ -6,6 +6,7 @@ This system will store employee information. First, the system will display a me
 3. Print all employee
 4. Print the name of the highest paid employee
 5. Exit
+
 If the user selects 1, the system will take 3 inputs (ID, Name, Salary) to add a new employee.
 After inserting the employee, the system will display the menu again.
 If the user selects 2, the system will take 1 input (ID) to delete that employee. If the ID does not
@@ -23,6 +24,7 @@ Example (Here, red color indicates user input):
 3. Print all employee
 4. Print the name of the highest paid employee
 5. Exit
+
 Select an option (1/2/3/4/5): 1
 Insert the ID of the new employee: 102
 Insert the name of the new employee: Sakib

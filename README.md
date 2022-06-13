@@ -35,6 +35,7 @@ Insert the salary of the new employee: 30000
 3. Print all employee
 4. Print the name of the highest paid employee
 5. Exit
+
 Select an option (1/2/3/4/5): 1
 Insert the ID of the new employee: 122
 Insert the name of the new employee: Nafis
@@ -45,6 +46,7 @@ Insert the salary of the new employee: 50000
 3. Print all employee
 4. Print the name of the highest paid employee
 5. Exit
+
 Select an option (1/2/3/4/5): 1
 
 Insert the ID of the new employee: 450
@@ -56,6 +58,7 @@ Insert the salary of the new employee: 20000
 3. Print all employee
 4. Print the name of the highest paid employee
 5. Exit
+ 
 Select an option (1/2/3/4/5): 2
 Insert the ID of the employee to be deleted: 122
 
@@ -64,6 +67,7 @@ Insert the ID of the employee to be deleted: 122
 3. Print all employee
 4. Print the name of the highest paid employee
 5. Exit
+
 Select an option (1/2/3/4/5): 3
 ID Name Salary
 102 Sakib 30000
@@ -74,6 +78,7 @@ ID Name Salary
 3. Print all employee
 4. Print the name of the highest paid employee
 5. Exit
+
 Select an option (1/2/3/4/5): 4
 Sakib
 
@@ -82,6 +87,7 @@ Sakib
 3. Print all employee
 4. Print the name of the highest paid employee
 5. Exit
+
 Select an option (1/2/3/4/5): 5
 (The program will stop running)
 

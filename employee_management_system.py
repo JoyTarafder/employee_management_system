@@ -15,13 +15,21 @@ def insert_employee():
   #Ask for employee detail
   print("****** Enter new employee details ******")
   employee_ID = input("Insert the ID of the new employee: ")
-  employee_name = input("Insert the name of the new employee: ")
+  employee_name = (input("Insert the name of the new employee: ")).title()
   employee_salary = float(input("Insert the salary of the new employee: "))
+  
+  found = False
+  for i in employee_list:
+    # Cheak same ID
+    if i[0] == employee_ID:
+      print("\nThis ID already exists.\nPlease enter new ID.")
+      found = True
 
-  #Adding new employee
-  New_employee = [employee_ID, employee_name, employee_salary]
-  employee_list.append(New_employee)
-  #print("Item inserted")
+  if found == False:
+    #Adding new employee
+    New_employee = [employee_ID, employee_name, employee_salary]
+    employee_list.append(New_employee)   
+
 
 def delete_employee():
   #delete employee

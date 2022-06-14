@@ -22,11 +22,16 @@ def insert_employee():
 
 def delete_employee():
   #delete employee
+  found = False
   id = input("Enter Employee ID : ")
   for i in employee_list:
       if i[0] == id:
           employee_list.remove(i)
           print("Remove the employee successful.")
+          found = True
+  if found == False:
+        print("This id has not been found")
+
 def print_highest_paid_employee_name():
    y = []
    for i in range(0, len(employee_list)):

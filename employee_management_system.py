@@ -1,11 +1,19 @@
 employee_list = []
 
 def print_employee_list():
-  print("Employee List:")
-  print("-------------")
-  print("ID      Name            Salary")
-  for i in range(0, len(employee_list)):
-    print("{0:6}  {1:12}  {2:7}".format(employee_list[i][0], employee_list[i][1], employee_list[i][2]))
+  # print("Employee List:")
+  # print("-------------")
+  # print("ID      Name            Salary")
+  # for i in range(0, len(employee_list)):
+  #   print("{0:6}  {1:12}  {2:7}".format(employee_list[i][0], employee_list[i][1], employee_list[i][2]))
+  if employee_list == []:
+    print("This employee list is empty")
+  else:
+    print("Employee List:")
+    print("-------------")
+    print("ID      Name            Salary")
+    for i in range(0, len(employee_list)):
+      print("{0:6}  {1:12}  {2:7}".format(employee_list[i][0], employee_list[i][1], employee_list[i][2]))
    
 
 def insert_employee():

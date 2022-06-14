@@ -26,8 +26,11 @@ Example (Here, red color indicates user input):
 5. Exit
 
 Select an option (1/2/3/4/5): 1
+
 Insert the ID of the new employee: 102
+
 Insert the name of the new employee: Sakib
+
 Insert the salary of the new employee: 30000
 
 1. Insert employee
@@ -37,8 +40,11 @@ Insert the salary of the new employee: 30000
 5. Exit
 
 Select an option (1/2/3/4/5): 1
+
 Insert the ID of the new employee: 122
+
 Insert the name of the new employee: Nafis
+
 Insert the salary of the new employee: 50000
 
 1. Insert employee
@@ -50,7 +56,9 @@ Insert the salary of the new employee: 50000
 Select an option (1/2/3/4/5): 1
 
 Insert the ID of the new employee: 450
+
 Insert the name of the new employee: Arif
+
 Insert the salary of the new employee: 20000
 
 1. Insert employee
@@ -60,6 +68,7 @@ Insert the salary of the new employee: 20000
 5. Exit
  
 Select an option (1/2/3/4/5): 2
+
 Insert the ID of the employee to be deleted: 122
 
 1. Insert employee
@@ -69,9 +78,12 @@ Insert the ID of the employee to be deleted: 122
 5. Exit
 
 Select an option (1/2/3/4/5): 3
-ID Name Salary
-102 Sakib 30000
-450 Arif 20000
+
+ID     Name   Salary
+
+102   Sakib   30000
+
+450   Arif    20000
 
 1. Insert employee
 2. Delete employee
@@ -80,6 +92,7 @@ ID Name Salary
 5. Exit
 
 Select an option (1/2/3/4/5): 4
+
 Sakib
 
 1. Insert employee
@@ -89,6 +102,7 @@ Sakib
 5. Exit
 
 Select an option (1/2/3/4/5): 5
+
 (The program will stop running)
 
 Hints:

@@ -44,13 +44,19 @@ def delete_employee():
         print("This id has not been found")
 
 def print_highest_paid_employee_name():
-   y = []
-   for i in range(0, len(employee_list)):
-        y.append(employee_list[i][2])
-   z = max(y)
-   for j in range(0, len(employee_list)):
-        if employee_list[j][2] == z:
-            print("Highest paid employee name : ",employee_list[j][1]) 
+  if employee_list == []:
+    print("This employee list is empty")
+  else:
+      employee_salary_list = []
+      for i in range(0, len(employee_list)):
+          employee_salary_list.append(employee_list[i][2])
+
+      employee_high_salary = max(employee_salary_list)
+      
+      for j in range(0, len(employee_list)):
+          if employee_list[j][2] == employee_high_salary:
+              print("Highest paid employee name : ",employee_list[j][1])
+     
 
 
 option = 0 

@@ -15,8 +15,7 @@ def insert_employee():
   #Ask for employee detail
   print("****** Enter new employee details ******")
   employee_ID = input("Insert the ID of the new employee: ")
-  employee_name = (input("Insert the name of the new employee: ")).title()
-  employee_salary = float(input("Insert the salary of the new employee: "))
+  
   
   found = False
   for i in employee_list:
@@ -27,6 +26,8 @@ def insert_employee():
 
   if found == False:
     #Adding new employee
+    employee_name = (input("Insert the name of the new employee: ")).title()
+    employee_salary = float(input("Insert the salary of the new employee: "))
     New_employee = [employee_ID, employee_name, employee_salary]
     employee_list.append(New_employee)   
 

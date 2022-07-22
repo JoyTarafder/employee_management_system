@@ -1,5 +1,6 @@
-userData = open('user.txt')
-def employee():
+f = open('user.txt')
+# x = 'joytarafder38@gmail.com 12346735\n'
+def LogIn():
     employee_list = []
     def print_employee_list():
         if employee_list == []:
@@ -62,13 +63,13 @@ def employee():
 
     option = 0
     while option != 5:  # Exit loop when the value is 5
-        print(" \n****** Employee Management System for IUB ******")
+        print(" ****** Employee Management System for IUB ******")
         print("---------------------------------------------------")
         print("1 -> Insert employee")
         print("2 -> Delete employee")
         print("3 -> Print all employee")
         print("4 -> Print the name of the highest paid employee")
-        print("5 -> Logout")
+        print("5 -> Exit")
         option = int(input("Select an option (1/2/3/4/5): "))
         print("\n")  # For new line
 
@@ -91,47 +92,24 @@ def employee():
             print("\n")  # For new line
         elif option == 5:
             # Exit
-            print("Logout\n")  # For new line
+            print("Log out\n")  # For new line
         else:  # Wrong Input (option < 0  and option > 5)
             print("Wrong Input\nTry again")
             print("\n")  # For new line
+    # else:
+    #     print("\nInvalid User ID")
 
-def Login():
-    print(" \n****** Employee Management System for IUB - Log in ******")
-    print("------------------------------------------------------------")
-    userName = input("Enter Your User Name : ")
-    password = input("Enter Your Password : ")
-    ID = userName + " " +  password + '\n'
-    found = True
-    for data in userData:
-        if data == ID:
-            employee()
-            found = False
-            break
 
-    if found == True:
-        print("\nNot Match User ID")
+userName = input("Enter User Name : ")
+password = input("Enter Password : ")
+x = userName + " " +  password + '\n'
+# print(x)
+for i in f:
+    # print(i, end="")
+    if i == x:
+        LogIn()
+        break
+    # else:
+    #     print(False)
 
-option = 0
-while option != 3:  # Exit loop when the value is 5
-    print(" \n****** Employee Management System for IUB ******")
-    print("---------------------------------------------------")
-    print("1 -> Registration")
-    print("2 -> Log in")
-    print("3 -> Exit")
-    option = int(input("Select an option (1/2/3): "))
-    print("\n")  # For new line
-    # Check chosen option and call the appropriate function
-    if option == 1:
-        # Call the insert_employee() function
-        print("Under construction")
-        print("\n")  # For new line
-    elif option == 2:
-        # Call the delete_employee() function
-        Login()
-        print("\n")  # For new line
-    elif option == 3:
-        # Call the print_employee_list() function
-        print("Exit\n")  # For new line
-
-userData.close()
+# f.closed()

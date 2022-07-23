@@ -129,7 +129,7 @@ while option != 3:  # Exit loop when the value is 3
         Login()
         print("\n")  # For new line
     elif option == 3:
-        # Exit
+
         print("Exit\n")  # For new line
 
 userData.close()

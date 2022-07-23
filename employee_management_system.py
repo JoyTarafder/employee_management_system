@@ -94,10 +94,21 @@ def employee():
             print("Wrong Input\nTry again")
             print("\n")  # For new line
 
+def Registration():
+    print(" \n****** Employee Management System for IUB - Registration ******")
+    print("----------------------------------------------------------------------")
+    userData = open('user.txt','a')
+    UserName = input("Enter Your Email/Username : ")
+    Password = input("Enter Your Password : ")
+    NewUser = UserName + " " + Password + "\n"
+    userData.write(NewUser)
+    print("Registration Successful.........")
+    userData.close()
+
 def Login():
     print(" \n****** Employee Management System for IUB - Log in ******")
     print("------------------------------------------------------------")
-    userName = input("Enter Your User Name : ")
+    userName = input("Enter Your Email/Username : ")
     password = input("Enter Your Password : ")
     ID = userName + " " +  password + '\n'
     found = True
@@ -122,7 +133,8 @@ while option != 3:  # Exit loop when the value is 3
     # Check chosen option and call the appropriate function
     if option == 1:
         # Call the registration() function
-        print("Under construction")
+        # print("Under construction")
+        Registration()
         print("\n")  # For new line
     elif option == 2:
         # Call the Login() function

@@ -113,7 +113,7 @@ def Login():
         print("\nNot Match User ID")
 
 option = 0
-while option != 3:  # Exit loop when the value is 5
+while option != 3:  # Exit loop when the value is 3
     print(" \n****** Employee Management System for IUB ******")
     print("---------------------------------------------------")
     print("1 -> Registration")

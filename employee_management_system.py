@@ -123,15 +123,15 @@ while option != 3:  # Exit loop when the value is 5
     print("\n")  # For new line
     # Check chosen option and call the appropriate function
     if option == 1:
-        # Call the insert_employee() function
+        # Call the registration() function
         print("Under construction")
         print("\n")  # For new line
     elif option == 2:
-        # Call the delete_employee() function
+        # Call the Login() function
         Login()
         print("\n")  # For new line
     elif option == 3:
-        # Call the print_employee_list() function
+        #Exit
         print("Exit\n")  # For new line
 
 userData.close()

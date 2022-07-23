@@ -17,19 +17,17 @@ def employee():
         print("****** Enter new employee details ******")
         employee_ID = input("Insert the ID of the new employee: ")
 
-        found = False
         for i in employee_list:
-            # Cheak same ID
-            if i[0] == employee_ID:
+            #Cheak same ID
+            while i[0] == employee_ID:
                 print("\nThis ID already exists.\nPlease enter new ID.")
-                found = True
+                employee_ID = input("Insert the New ID : ")
 
-        if found == False:
-            # Adding new employee
-            employee_name = (input("Insert the name of the new employee: ")).title()
-            employee_salary = float(input("Insert the salary of the new employee: "))
-            New_employee = [employee_ID, employee_name, employee_salary]
-            employee_list.append(New_employee)
+        # Adding new employee
+        employee_name = (input("Insert the name of the new employee: ")).title()
+        employee_salary = float(input("Insert the salary of the new employee: "))
+        New_employee = [employee_ID, employee_name, employee_salary]
+        employee_list.append(New_employee)
 
 
     def delete_employee():
@@ -38,8 +36,8 @@ def employee():
         id = input("Enter Employee ID : ")
         for i in employee_list:
             if i[0] == id:
+                print(f"Employee Name : {i[1]}\nRemove the employee successful.")
                 employee_list.remove(i)
-                print("Remove the employee successful.")
                 found = True
         if found == False:
             print("This id has not been found")
@@ -113,7 +111,7 @@ def Login():
         print("\nNot Match User ID")
 
 option = 0
-while option != 3:  # Exit loop when the value is 5
+while option != 3:  # Exit loop when the value is 3
     print(" \n****** Employee Management System for IUB ******")
     print("---------------------------------------------------")
     print("1 -> Registration")
@@ -123,15 +121,15 @@ while option != 3:  # Exit loop when the value is 5
     print("\n")  # For new line
     # Check chosen option and call the appropriate function
     if option == 1:
-        # Call the insert_employee() function
+        # Call the registration() function
         print("Under construction")
         print("\n")  # For new line
     elif option == 2:
-        # Call the delete_employee() function
+        # Call the Login() function
         Login()
         print("\n")  # For new line
     elif option == 3:
-        # Call the print_employee_list() function
+        # Exit
         print("Exit\n")  # For new line
 
 userData.close()
